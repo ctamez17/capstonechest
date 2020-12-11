@@ -12,10 +12,12 @@ export default function SaveScoreForm({ score }) {
     const updatedUsername = e.target.value;
     setUsername(updatedUsername);
     console.log(username);
+    console.log("Character Updated")
   };
 
   const saveHighScore = (e) => {
     e.preventDefault();
+    console.log("Saving Highscore")
     window.location.reload(); // <-- Used
     const record = {
       name: username,

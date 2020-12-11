@@ -44,7 +44,7 @@ export default function HighScores() {
             </li>
           ))}
         </div>
-        <footer className="footer">💰 Chainsaw's Booty 💰</footer>
+        <footer className="footer">Cody's Treasure Chest Game</footer>
       </>
     </>
   );

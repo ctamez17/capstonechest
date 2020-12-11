@@ -81,6 +81,8 @@ Heading
 .note {
   font-size: 24px;
   padding: 10px;
+  background-color: #ffffff;
+  border-radius: 25px;
 }
 
 /* 
@@ -90,6 +92,7 @@ Button
 */
 
 .btn {
+  font-family: "Pirata One", cursive;
   display: inline-block;
   /* padding: 15px 25px; */
   font-size: 24px;
@@ -125,6 +128,8 @@ Input Field(s)
 ------------ 
 */
 .input {
+  font-family: "Pirata One", cursive;
+  font-size: 24px;
   width: 25%;
   border-radius: 25px;
   padding: 10px 10px;

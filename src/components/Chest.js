@@ -128,7 +128,7 @@ function Chest() {
         <>{loser && <SaveScoreForm score={highscore} />}</>
       </div>
 
-      <footer className="footer">💰 Chainsaw's Booty 💰</footer>
+      <footer className="footer">Cody's Treasure Chest Game</footer>
     </div>
   );
 }
