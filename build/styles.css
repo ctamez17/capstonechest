@@ -1,0 +1,276 @@
+body {
+  font-family: "Pirata One", cursive;
+  margin: 0 0;
+  padding: 25px 25px;
+  background-color: #fcf6d6;
+  text-align: center;
+
+  background-image: url("goldbackground10.png");
+  background-repeat: repeat-y;
+}
+
+.background img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.6;
+}
+
+/* 
+------------
+Navbar 
+------------ 
+*/
+
+.navul {
+  border-radius: 0 0 25px 25px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  font-size: 24px;
+  box-shadow: 0 2px 5px rgb(104, 104, 104);
+}
+
+.navli {
+  float: left;
+}
+
+.navli a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.navli a:hover {
+  background-color: #111;
+}
+
+/* 
+------------
+Heading 
+------------ 
+*/
+
+.headingContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  text-align: center;
+  background-color: #ffffff;
+  font-size: 30px; /* 2em */
+  width: 100%;
+}
+
+.heading p {
+  font-size: 60px;
+  padding: 0 0;
+}
+
+.note {
+  font-size: 24px;
+  padding: 10px;
+}
+
+/* 
+------------
+Button 
+------------ 
+*/
+
+.btn {
+  display: inline-block;
+  /* padding: 15px 25px; */
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #292929;
+  background-color: #ffe657;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px rgb(73, 73, 73);
+}
+
+.btn:hover {
+  background-color: #ffe657;
+}
+
+.btn:disabled {
+  background-color: #767676;
+  color: #adadad;
+}
+
+.btn:active {
+  background-color: #ffe657;
+  box-shadow: 0 2px #666;
+  transform: translateY(2px);
+}
+
+/* 
+------------
+Input Field(s)
+------------ 
+*/
+.input {
+  width: 25%;
+  border-radius: 25px;
+  padding: 10px 10px;
+  gap: 25px;
+}
+
+/* 
+------------
+Score 
+------------ 
+*/
+
+.scoreContainer {
+  /* letter-spacing: 1px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  border-radius: 25px 25px 0 0;
+  background-color: #ffffff;
+  font-size: 24px; /* 2em */
+  width: 100%;
+  box-shadow: 0 2px 5px rgb(199, 199, 199);
+}
+
+.highscore {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  background-color: #ffffff;
+  font-size: 24px;
+  width: 100px; */
+}
+
+.score {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center; 
+  background-color: #ffffff;
+  font-size: 24px;
+  width: 100%; */
+}
+
+/* 
+------------
+Results
+------------ 
+*/
+
+.resultsWin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  border-radius: 0 0 25px 25px;
+  text-align: center;
+  background-color: #ffe657;
+  font-size: 24px; /* 2em */
+  width: 100%;
+  box-shadow: 0 2px 5px rgb(199, 199, 199);
+}
+
+.resultsLose {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  border-radius: 0 0 25px 25px;
+  text-align: center;
+  background-color: #f39b9b;
+  font-size: 24px; /* 2em */
+  width: 100%;
+  box-shadow: 0 2px 5px rgb(199, 199, 199);
+}
+
+/* 
+------------
+Chests
+------------ 
+*/
+
+.chestImg {
+  align-content: center;
+  justify-content: center;
+  border-radius: 5%;
+  position: relative;
+  padding: 20px 20px; /* 70px 70px */
+  background-color: #ffffff;
+  height: 155px;
+  top: 0px;
+  box-shadow: 0 2px 5px rgb(199, 199, 199);
+  text-align: center;
+  transition-property: height, border-radius, padding, margin, top, transform;
+  transition-duration: 0.5s;
+}
+
+.chestImg:hover {
+  height: 155px;
+  transform: translateY(-5px);
+}
+
+.chestImg:active {
+  transition-duration: 0.01s;
+  transform: translateY(-3px);
+  background-color: #ade1ff;
+}
+
+.chestFlex {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  gap: 2.5%;
+}
+
+/* 
+------------
+Footer
+------------ 
+*/
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+/* 
+------------
+The Tavern 
+------------ 
+*/
+
+.tavernList {
+  border-radius: 25px 25px 25px 25px;
+  list-style-type: none;
+  margin: 0;
+  padding: 25px 25px;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  font-size: 24px;
+}
