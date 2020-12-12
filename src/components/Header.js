@@ -8,7 +8,7 @@ function Header(props) {
         <div>
           <ul className="navul">
             <li className="navli">
-              <a href="/">Home</a>
+              <a href="/">Play</a>
             </li>
             <li className="navli">
               <a href="/highscores">Tavern</a>

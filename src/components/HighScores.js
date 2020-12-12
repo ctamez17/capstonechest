@@ -36,7 +36,7 @@ export default function HighScores() {
       {!loading && ( */}
       <>
         <Header />
-        <p className="note">Previous Bests:</p>
+        <p className="note">High Scores:</p>
         <div id="highScoresList" className="tavernList">
           {scores.map((record) => (
             <li>

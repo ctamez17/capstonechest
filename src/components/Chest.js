@@ -3,6 +3,8 @@ import Score from "./Score";
 import SaveScoreForm from "./SaveScoreForm";
 import Header from "./Header";
 
+//Possible song idea: https://www.youtube.com/watch?v=O04QbOeSck0
+
 function Chest() {
   let [score, setScore] = useState(0);
   let [roll, setRoll] = useState(0);
@@ -19,9 +21,13 @@ function Chest() {
     setRoll(rollRandom);
   };
 
+  // async componentDidMount(){
+  //   const url = ""
+  // }
+
   const checkForWin = () => {
     //setStartPlay(true);
-    if (roll >= 3) {
+    if (roll > 3) {
       setWinner(true);
       setLoser(false);
       handleIncrement();
@@ -33,7 +39,7 @@ function Chest() {
           " - Roll: " +
           roll
       );
-    } else if (roll < 3) {
+    } else if (roll <= 3) {
       setWinner(false);
       setLoser(true);
 
@@ -86,6 +92,14 @@ function Chest() {
       </div>
       <p className="note">Try your luck, pick a chest:</p>
       <div className="scoreContainer">
+        {/* --- HIGH SCORE --- */}
+        <div className="highscore">
+          {/* <>{!startPlay && <p>Biggest Plunder: {highscore}</p>}</> */}
+          <div className="chexFlex">
+            <p>Biggest Plunder: {highscore} gold</p>
+            <Score score={score} increase={increase} />
+          </div>
+        </div>
         {/* --- CHESTS x3 --- */}
         <div className="chestFlex">
           <img
@@ -107,19 +121,16 @@ function Chest() {
             alt="ChestThree"
           />
         </div>
-        {/* --- HIGH SCORE --- */}
-        <div className="highscore">
-          {/* <>{!startPlay && <p>Biggest Plunder: {highscore}</p>}</> */}
-          <p>Biggest Plunder: {highscore} gold</p>
-        </div>
-        {/* --- SCORE --- */}
-        <Score score={score} increase={increase} />
+
         {/* --- SHOW WINNER */}
       </div>
       <div className="resultsWin">
         <>
           {winner && (
-            <p>Congratulations! You found {increase} gold in this chest!</p>
+            <div>
+              <p>Congratulations! You found {increase} gold in this chest!</p>
+              <img src="chest_opened.png" alt="" width="100px" />
+            </div>
           )}
         </>
       </div>

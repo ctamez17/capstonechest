@@ -6,7 +6,7 @@ body {
   text-align: center;
 
   background-image: url("goldbackground10.png");
-  background-repeat: repeat-y;
+  background-repeat: repeat;
 }
 
 .background img {
@@ -25,14 +25,15 @@ Navbar
 */
 
 .navul {
+  position: relative;
   border-radius: 0 0 25px 25px;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #ffe657;
   font-size: 24px;
-  box-shadow: 0 2px 5px rgb(104, 104, 104);
+  box-shadow: 0 2px 5px rgb(199, 199, 199);
 }
 
 .navli {
@@ -41,7 +42,7 @@ Navbar
 
 .navli a {
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -49,6 +50,7 @@ Navbar
 
 /* Change the link color to #111 (black) on hover */
 .navli a:hover {
+  color: white;
   background-color: #111;
 }
 
@@ -75,13 +77,15 @@ Heading
 
 .heading p {
   font-size: 60px;
-  padding: 0 0;
+  padding: 0px 0px;
+  margin: 0;
 }
 
 .note {
   font-size: 24px;
-  padding: 10px;
-  background-color: #ffffff;
+  padding: 0px;
+  color: black;
+  background-color: white;
   border-radius: 25px;
 }
 
@@ -105,6 +109,8 @@ Button
   border: none;
   border-radius: 15px;
   box-shadow: 0 4px rgb(73, 73, 73);
+  padding: 8px 20px;
+  margin-left: 10px;
 }
 
 .btn:hover {
@@ -134,6 +140,7 @@ Input Field(s)
   border-radius: 25px;
   padding: 10px 10px;
   gap: 25px;
+  margin-bottom: 25px;
 }
 
 /* 
@@ -150,6 +157,8 @@ Score
   align-content: center;
   text-align: center;
   border-radius: 25px 25px 0 0;
+  /* color: white;
+  background-color: #333; */
   background-color: #ffffff;
   font-size: 24px; /* 2em */
   width: 100%;
@@ -165,6 +174,7 @@ Score
   background-color: #ffffff;
   font-size: 24px;
   width: 100px; */
+  /* padding: 0px; */
 }
 
 .score {
@@ -175,6 +185,7 @@ Score
   background-color: #ffffff;
   font-size: 24px;
   width: 100%; */
+  /* padding: 0px; */
 }
 
 /* 
@@ -203,7 +214,8 @@ Results
   gap: 5px;
   border-radius: 0 0 25px 25px;
   text-align: center;
-  background-color: #f39b9b;
+  color: white;
+  background-color: #333;
   font-size: 24px; /* 2em */
   width: 100%;
   box-shadow: 0 2px 5px rgb(199, 199, 199);
@@ -222,7 +234,7 @@ Chests
   position: relative;
   padding: 20px 20px; /* 70px 70px */
   background-color: #ffffff;
-  height: 155px;
+  height: 125px;
   top: 0px;
   box-shadow: 0 2px 5px rgb(199, 199, 199);
   text-align: center;
@@ -231,17 +243,19 @@ Chests
 }
 
 .chestImg:hover {
-  height: 155px;
+  height: 126px;
   transform: translateY(-5px);
 }
 
 .chestImg:active {
   transition-duration: 0.01s;
   transform: translateY(-3px);
-  background-color: #ade1ff;
+  background-color: #ffe657;
 }
 
 .chestFlex {
+  background-color: white;
+  border-radius: 0px 0px 0px 0px;
   display: flex;
   justify-content: center;
   padding: 25px;
@@ -259,8 +273,8 @@ Footer
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #333;
-  color: white;
+  background-color: #ffe657;
+  color: #000000;
   text-align: center;
 }
 
